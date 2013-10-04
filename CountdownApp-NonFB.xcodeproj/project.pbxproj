@@ -36,6 +36,15 @@
 		AA53F3CA17FBCD910055CC7A /* divider@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AA53F3C617FBCD910055CC7A /* divider@2x.png */; };
 		AA53F3CB17FBCD910055CC7A /* modalbackground.png in Resources */ = {isa = PBXBuildFile; fileRef = AA53F3C717FBCD910055CC7A /* modalbackground.png */; };
 		AA53F3CC17FBCD910055CC7A /* modalbackground@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AA53F3C817FBCD910055CC7A /* modalbackground@2x.png */; };
+		AA53F3D217FD10190055CC7A /* eventDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA53F3D117FD10190055CC7A /* eventDetailViewController.m */; };
+		AA53F3D517FE29B00055CC7A /* white-60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AA53F3D317FE29B00055CC7A /* white-60@2x.png */; };
+		AA53F3D617FE29B00055CC7A /* white-60.png in Resources */ = {isa = PBXBuildFile; fileRef = AA53F3D417FE29B00055CC7A /* white-60.png */; };
+		AA53F3D917FE473D0055CC7A /* white-80@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AA53F3D717FE473D0055CC7A /* white-80@2x.png */; };
+		AA53F3DA17FE473D0055CC7A /* white-80.png in Resources */ = {isa = PBXBuildFile; fileRef = AA53F3D817FE473D0055CC7A /* white-80.png */; };
+		AA53F3DD17FE47780055CC7A /* white-92@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AA53F3DB17FE47780055CC7A /* white-92@2x.png */; };
+		AA53F3DE17FE47780055CC7A /* white-92.png in Resources */ = {isa = PBXBuildFile; fileRef = AA53F3DC17FE47780055CC7A /* white-92.png */; };
+		AA53F3E117FE48290055CC7A /* close@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AA53F3DF17FE48290055CC7A /* close@2x.png */; };
+		AA53F3E217FE48290055CC7A /* close.png in Resources */ = {isa = PBXBuildFile; fileRef = AA53F3E017FE48290055CC7A /* close.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +100,16 @@
 		AA53F3C617FBCD910055CC7A /* divider@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "divider@2x.png"; sourceTree = "<group>"; };
 		AA53F3C717FBCD910055CC7A /* modalbackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = modalbackground.png; sourceTree = "<group>"; };
 		AA53F3C817FBCD910055CC7A /* modalbackground@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "modalbackground@2x.png"; sourceTree = "<group>"; };
+		AA53F3D017FD10190055CC7A /* eventDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = eventDetailViewController.h; sourceTree = "<group>"; };
+		AA53F3D117FD10190055CC7A /* eventDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = eventDetailViewController.m; sourceTree = "<group>"; };
+		AA53F3D317FE29B00055CC7A /* white-60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "white-60@2x.png"; path = "images/white-60@2x.png"; sourceTree = "<group>"; };
+		AA53F3D417FE29B00055CC7A /* white-60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "white-60.png"; path = "images/white-60.png"; sourceTree = "<group>"; };
+		AA53F3D717FE473D0055CC7A /* white-80@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "white-80@2x.png"; path = "images/white-80@2x.png"; sourceTree = "<group>"; };
+		AA53F3D817FE473D0055CC7A /* white-80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "white-80.png"; path = "images/white-80.png"; sourceTree = "<group>"; };
+		AA53F3DB17FE47780055CC7A /* white-92@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "white-92@2x.png"; path = "images/white-92@2x.png"; sourceTree = "<group>"; };
+		AA53F3DC17FE47780055CC7A /* white-92.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "white-92.png"; path = "images/white-92.png"; sourceTree = "<group>"; };
+		AA53F3DF17FE48290055CC7A /* close@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "close@2x.png"; path = "images/close@2x.png"; sourceTree = "<group>"; };
+		AA53F3E017FE48290055CC7A /* close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = close.png; path = images/close.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,6 +187,8 @@
 				AA53F3BA17FBCA090055CC7A /* addEventViewController.h */,
 				AA53F3BB17FBCA090055CC7A /* addEventViewController.m */,
 				AA53F3C317FBCBA20055CC7A /* countdownModal.h */,
+				AA53F3D017FD10190055CC7A /* eventDetailViewController.h */,
+				AA53F3D117FD10190055CC7A /* eventDetailViewController.m */,
 			);
 			path = "CountdownApp-NonFB";
 			sourceTree = "<group>";
@@ -223,6 +244,14 @@
 		AA53F3C417FBCD780055CC7A /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				AA53F3DF17FE48290055CC7A /* close@2x.png */,
+				AA53F3E017FE48290055CC7A /* close.png */,
+				AA53F3DB17FE47780055CC7A /* white-92@2x.png */,
+				AA53F3DC17FE47780055CC7A /* white-92.png */,
+				AA53F3D717FE473D0055CC7A /* white-80@2x.png */,
+				AA53F3D817FE473D0055CC7A /* white-80.png */,
+				AA53F3D317FE29B00055CC7A /* white-60@2x.png */,
+				AA53F3D417FE29B00055CC7A /* white-60.png */,
 				AA53F3C517FBCD910055CC7A /* divider.png */,
 				AA53F3C617FBCD910055CC7A /* divider@2x.png */,
 				AA53F3C717FBCD910055CC7A /* modalbackground.png */,
@@ -307,11 +336,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA53F3D917FE473D0055CC7A /* white-80@2x.png in Resources */,
+				AA53F3E117FE48290055CC7A /* close@2x.png in Resources */,
+				AA53F3D517FE29B00055CC7A /* white-60@2x.png in Resources */,
+				AA53F3E217FE48290055CC7A /* close.png in Resources */,
 				AA53F3CC17FBCD910055CC7A /* modalbackground@2x.png in Resources */,
 				AA53F37D17FBBDA80055CC7A /* InfoPlist.strings in Resources */,
 				AA53F3CB17FBCD910055CC7A /* modalbackground.png in Resources */,
 				AA53F3CA17FBCD910055CC7A /* divider@2x.png in Resources */,
+				AA53F3D617FE29B00055CC7A /* white-60.png in Resources */,
+				AA53F3DA17FE473D0055CC7A /* white-80.png in Resources */,
 				AA53F3C917FBCD910055CC7A /* divider.png in Resources */,
+				AA53F3DE17FE47780055CC7A /* white-92.png in Resources */,
+				AA53F3DD17FE47780055CC7A /* white-92@2x.png in Resources */,
 				AA53F3A617FBBDED0055CC7A /* countdownApp.storyboard in Resources */,
 				AA53F38817FBBDA80055CC7A /* Images.xcassets in Resources */,
 			);
@@ -338,6 +375,7 @@
 				AA53F3B817FBC9DB0055CC7A /* MZFormSheetSegue.m in Sources */,
 				AA53F3B717FBC9DB0055CC7A /* MZFormSheetController.m in Sources */,
 				AA53F3BC17FBCA090055CC7A /* addEventViewController.m in Sources */,
+				AA53F3D217FD10190055CC7A /* eventDetailViewController.m in Sources */,
 				AA53F3B617FBC9DB0055CC7A /* MZFormSheetBackgroundWindow.m in Sources */,
 				AA53F3C117FBCB690055CC7A /* MZAppearance.m in Sources */,
 				AA53F38617FBBDA80055CC7A /* CountdownApp_NonFB.xcdatamodeld in Sources */,

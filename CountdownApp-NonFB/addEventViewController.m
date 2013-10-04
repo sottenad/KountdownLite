@@ -37,12 +37,14 @@
     tf = [[NSDateFormatter alloc] init];
     [tf setDateFormat:@"h:m"];
     
+    //Mkae Date Picker
     CGRect pickerFrame = CGRectMake(0,700,0,0);
     UIDatePicker *myDatePicker = [[UIDatePicker alloc] initWithFrame:pickerFrame];
     [myDatePicker addTarget:self action:@selector(eventDatePickerChanged:) forControlEvents:UIControlEventValueChanged];
     myDatePicker.datePickerMode = UIDatePickerModeDate;
     NSDate *Date=[NSDate date];
     myDatePicker.minimumDate=Date;
+    
     eventDate.inputView = myDatePicker;
     
     

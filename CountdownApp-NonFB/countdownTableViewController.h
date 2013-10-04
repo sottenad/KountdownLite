@@ -10,8 +10,8 @@
 #import "countdownModal.h"
 
 @interface countdownTableViewController : UITableViewController<countdownModal>{
-    NSArray *countdowns;
-    
+    NSMutableArray *countdowns;
+    NSArray *colors;
 }
 
 @end

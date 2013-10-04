@@ -9,6 +9,8 @@
 #import "countdownTableViewController.h"
 #import "MZFormSheetController.h"
 #import "addEventViewController.h"
+#import "eventDetailViewController.h"
+
 
 @interface countdownTableViewController ()
 
@@ -34,6 +36,8 @@
     NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] initWithEntityName:@"Countdown"];
     countdowns = [[managedObjectContext executeFetchRequest:fetchRequest error:nil]mutableCopy];
     
+    NSLog(@"%@", countdowns);
+    
     UIBarButtonItem *addButton = [UIBarButtonItem alloc];
     addButton.title = @"Add";
     addButton.enabled = YES;
@@ -42,21 +46,36 @@
     // forControlEvents:UIControlEventTouchUpInside];
     addButton.target = self;
     addButton.action = @selector(addCountdown);
-    
     self.navigationItem.rightBarButtonItem = addButton;
 
-
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
+    [UIColor colorWithRed: 127.0/255.0f green:127.0/255.0f blue:127.0/255.0f alpha:1.0];
+    colors = [[NSArray alloc] initWithObjects:
+                [UIColor colorWithRed:1/255.0f green:122/255.0f blue:255/255.0f alpha:1],
+                [UIColor colorWithRed:253/255.0f green:58/255.0f blue:53/255.0f alpha:1],
+                [UIColor colorWithRed:83/255.0f green:214/255.0f blue:104/255.0f alpha:1],
+                [UIColor colorWithRed:254/255.0f green:146/255.0f blue:30/255.0f alpha:1]
+                , nil];
  
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+     self.navigationItem.leftBarButtonItem = self.editButtonItem;
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+
+
+- (void) setEditing:(BOOL)editing animated:(BOOL)animated {
+    [super setEditing:editing animated:animated];
+    [self.tableView setEditing:editing animated:animated];
+    if (editing) {
+        // you might disable other widgets here... (optional)
+    } else {
+        // re-enable disabled widgets (optional)
+    }
 }
 
 #pragma mark - Table view data source
@@ -102,8 +121,13 @@
                                                          options:0];
     NSString *daysApart = [NSString stringWithFormat:@"%i", [components day]];
 
+    int r = fmod((double)indexPath.row, 4.0);
+    
     UILabel *countdownDate = (UILabel *)[cell viewWithTag:101];
     countdownDate.text = [NSString stringWithFormat:@"%@ days", daysApart ];
+    
+    [countdownDate setTextColor:[colors objectAtIndex:r]];
+    [countdownTitle setTextColor:[colors objectAtIndex:r]];
     
     UIImageView *thumb = (UIImageView *)[cell viewWithTag:102];
     UIImage *thumbImage = [[UIImage alloc] initWithData:[countdown valueForKey:@"photo"]];
@@ -152,7 +176,23 @@
     
 }
 
+- (void)tableView: (UITableView *)tableView didSelectRowAtIndexPath: (NSIndexPath *)indexPath
+{
+    NSManagedObject *countdown = [countdowns objectAtIndex:indexPath.row];
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"countdownApp" bundle:[NSBundle mainBundle]];
+    eventDetailViewController *evd = [storyboard instantiateViewControllerWithIdentifier:@"eventDetailView"] ;
 
+    int r = fmod((double)indexPath.row, 4.0);
+    
+    evd.myDate = [NSString stringWithFormat:@"%@", [countdown valueForKey:@"deadline"]];
+    evd.myTime = [NSString stringWithFormat:@"%@", [countdown valueForKey:@"time"]];
+    evd.myTitle = [NSString stringWithFormat:@"%@", [countdown valueForKey:@"title"]];
+    UIImage *mainImage = [[UIImage alloc] initWithData:[countdown valueForKey:@"photo"]];
+    evd.fontColor = [colors objectAtIndex:r];
+    evd.myImage = mainImage;
+    [self presentViewController:evd animated:YES completion:nil];
+
+}
 
 /*
 // Override to support conditional editing of the table view.
@@ -163,10 +203,31 @@
 }
 */
 
-/*
+
 // Override to support editing the table view.
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    NSManagedObject *countdown = [countdowns objectAtIndex:indexPath.row];
+    NSString *itemTitle = [NSString stringWithFormat:@"%@", [countdown valueForKey:@"title"]];
+    
+    NSManagedObjectContext *managedObjectContext = [self managedObjectContext];
+    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] initWithEntityName:@"Countdown"];
+    NSPredicate *titlePredicate = [NSPredicate predicateWithFormat:@"(title == %@)", itemTitle];
+    [fetchRequest setPredicate:titlePredicate];
+    
+    NSError *error;
+    NSArray *objects = [managedObjectContext executeFetchRequest:fetchRequest error:&error];
+    
+    NSManagedObject *eventToDelete = [managedObjectContext objectWithID:[[objects objectAtIndex:0] objectID]];
+    [managedObjectContext deleteObject:eventToDelete];
+    [managedObjectContext save:nil];
+    [countdowns removeObjectAtIndex:indexPath.row];
+    
+    
+    NSLog(@"%@",objects);
+    [self.tableView reloadData];
+    
+    /*
     if (editingStyle == UITableViewCellEditingStyleDelete) {
         // Delete the row from the data source
         [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
@@ -174,8 +235,9 @@
     else if (editingStyle == UITableViewCellEditingStyleInsert) {
         // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
     }   
+     */
 }
-*/
+
 
 /*
 // Override to support rearranging the table view.
