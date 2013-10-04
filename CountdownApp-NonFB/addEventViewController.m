@@ -111,9 +111,7 @@
 -(void) takePicture:(id) sender
 {
     UIImagePickerController *imagePicker = [[UIImagePickerController alloc] init];
-
     [imagePicker setSourceType:UIImagePickerControllerSourceTypePhotoLibrary];
-
     [imagePicker setDelegate:self];
     [self presentViewController:imagePicker animated:YES completion:nil];
 }
@@ -123,16 +121,18 @@
 {
     UIImage *image = [info objectForKey:UIImagePickerControllerOriginalImage];
     [imageThumb setImage:image];
-    [self dismissModalViewControllerAnimated:YES];
+    [selectPhoto removeFromSuperview];
+    [self dismissViewControllerAnimated:YES completion:nil];
+    //[self dismissModalViewControllerAnimated:YES];
 }
 
 
 
 -(NSManagedObjectContext *)managedObjectContext{
     NSManagedObjectContext *context = nil;
-    id delegate = [[UIApplication sharedApplication] delegate];
-    if([delegate performSelector:@selector(managedObjectContext)]){
-        context = [delegate managedObjectContext];
+    id mydelegate = [[UIApplication sharedApplication] delegate];
+    if([mydelegate performSelector:@selector(managedObjectContext)]){
+        context = [mydelegate managedObjectContext];
     }
     return context;
 }

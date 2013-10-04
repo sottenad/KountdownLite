@@ -13,6 +13,7 @@
     IBOutlet UITextField * eventName;
     IBOutlet UITextField * eventDate;
     IBOutlet UITextField * eventTime;
+    IBOutlet UIButton *selectPhoto;
     IBOutlet UIImageView * imageThumb;
     NSDateFormatter *df;
     NSDateFormatter *tf;

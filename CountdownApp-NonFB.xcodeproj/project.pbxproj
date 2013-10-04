@@ -45,6 +45,8 @@
 		AA53F3DE17FE47780055CC7A /* white-92.png in Resources */ = {isa = PBXBuildFile; fileRef = AA53F3DC17FE47780055CC7A /* white-92.png */; };
 		AA53F3E117FE48290055CC7A /* close@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AA53F3DF17FE48290055CC7A /* close@2x.png */; };
 		AA53F3E217FE48290055CC7A /* close.png in Resources */ = {isa = PBXBuildFile; fileRef = AA53F3E017FE48290055CC7A /* close.png */; };
+		AA53F3E517FE54020055CC7A /* upload@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AA53F3E317FE54020055CC7A /* upload@2x.png */; };
+		AA53F3E617FE54020055CC7A /* upload.png in Resources */ = {isa = PBXBuildFile; fileRef = AA53F3E417FE54020055CC7A /* upload.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -110,6 +112,8 @@
 		AA53F3DC17FE47780055CC7A /* white-92.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "white-92.png"; path = "images/white-92.png"; sourceTree = "<group>"; };
 		AA53F3DF17FE48290055CC7A /* close@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "close@2x.png"; path = "images/close@2x.png"; sourceTree = "<group>"; };
 		AA53F3E017FE48290055CC7A /* close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = close.png; path = images/close.png; sourceTree = "<group>"; };
+		AA53F3E317FE54020055CC7A /* upload@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "upload@2x.png"; path = "images/upload@2x.png"; sourceTree = "<group>"; };
+		AA53F3E417FE54020055CC7A /* upload.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = upload.png; path = images/upload.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -244,6 +248,8 @@
 		AA53F3C417FBCD780055CC7A /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				AA53F3E317FE54020055CC7A /* upload@2x.png */,
+				AA53F3E417FE54020055CC7A /* upload.png */,
 				AA53F3DF17FE48290055CC7A /* close@2x.png */,
 				AA53F3E017FE48290055CC7A /* close.png */,
 				AA53F3DB17FE47780055CC7A /* white-92@2x.png */,
@@ -340,6 +346,7 @@
 				AA53F3E117FE48290055CC7A /* close@2x.png in Resources */,
 				AA53F3D517FE29B00055CC7A /* white-60@2x.png in Resources */,
 				AA53F3E217FE48290055CC7A /* close.png in Resources */,
+				AA53F3E617FE54020055CC7A /* upload.png in Resources */,
 				AA53F3CC17FBCD910055CC7A /* modalbackground@2x.png in Resources */,
 				AA53F37D17FBBDA80055CC7A /* InfoPlist.strings in Resources */,
 				AA53F3CB17FBCD910055CC7A /* modalbackground.png in Resources */,
@@ -351,6 +358,7 @@
 				AA53F3DD17FE47780055CC7A /* white-92@2x.png in Resources */,
 				AA53F3A617FBBDED0055CC7A /* countdownApp.storyboard in Resources */,
 				AA53F38817FBBDA80055CC7A /* Images.xcassets in Resources */,
+				AA53F3E517FE54020055CC7A /* upload@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
