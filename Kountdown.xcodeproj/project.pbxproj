@@ -25,13 +25,7 @@
 		AA53F3A617FBBDED0055CC7A /* countdownApp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA53F3A517FBBDED0055CC7A /* countdownApp.storyboard */; };
 		AA53F3A917FBBE990055CC7A /* countdownViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA53F3A817FBBE990055CC7A /* countdownViewController.m */; };
 		AA53F3AC17FBC1CA0055CC7A /* countdownTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA53F3AB17FBC1CA0055CC7A /* countdownTableViewController.m */; };
-		AA53F3B617FBC9DB0055CC7A /* MZFormSheetBackgroundWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = AA53F3AF17FBC9DB0055CC7A /* MZFormSheetBackgroundWindow.m */; };
-		AA53F3B717FBC9DB0055CC7A /* MZFormSheetController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA53F3B117FBC9DB0055CC7A /* MZFormSheetController.m */; };
-		AA53F3B817FBC9DB0055CC7A /* MZFormSheetSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = AA53F3B317FBC9DB0055CC7A /* MZFormSheetSegue.m */; };
-		AA53F3B917FBC9DB0055CC7A /* UIImage+Additional.m in Sources */ = {isa = PBXBuildFile; fileRef = AA53F3B517FBC9DB0055CC7A /* UIImage+Additional.m */; };
 		AA53F3BC17FBCA090055CC7A /* addEventViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA53F3BB17FBCA090055CC7A /* addEventViewController.m */; };
-		AA53F3C117FBCB690055CC7A /* MZAppearance.m in Sources */ = {isa = PBXBuildFile; fileRef = AA53F3BE17FBCB690055CC7A /* MZAppearance.m */; };
-		AA53F3C217FBCB690055CC7A /* NSInvocation+Copy.m in Sources */ = {isa = PBXBuildFile; fileRef = AA53F3C017FBCB690055CC7A /* NSInvocation+Copy.m */; };
 		AA53F3C917FBCD910055CC7A /* divider.png in Resources */ = {isa = PBXBuildFile; fileRef = AA53F3C517FBCD910055CC7A /* divider.png */; };
 		AA53F3CA17FBCD910055CC7A /* divider@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AA53F3C617FBCD910055CC7A /* divider@2x.png */; };
 		AA53F3CB17FBCD910055CC7A /* modalbackground.png in Resources */ = {isa = PBXBuildFile; fileRef = AA53F3C717FBCD910055CC7A /* modalbackground.png */; };
@@ -47,6 +41,20 @@
 		AA53F3E217FE48290055CC7A /* close.png in Resources */ = {isa = PBXBuildFile; fileRef = AA53F3E017FE48290055CC7A /* close.png */; };
 		AA53F3E517FE54020055CC7A /* upload@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AA53F3E317FE54020055CC7A /* upload@2x.png */; };
 		AA53F3E617FE54020055CC7A /* upload.png in Resources */ = {isa = PBXBuildFile; fileRef = AA53F3E417FE54020055CC7A /* upload.png */; };
+		AAC6E09917FFBFAA0085B6BE /* MZAppearance.m in Sources */ = {isa = PBXBuildFile; fileRef = AAC6E08E17FFBFAA0085B6BE /* MZAppearance.m */; };
+		AAC6E09A17FFBFAA0085B6BE /* MZFormSheetBackgroundWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = AAC6E09017FFBFAA0085B6BE /* MZFormSheetBackgroundWindow.m */; };
+		AAC6E09B17FFBFAA0085B6BE /* MZFormSheetController.m in Sources */ = {isa = PBXBuildFile; fileRef = AAC6E09217FFBFAA0085B6BE /* MZFormSheetController.m */; };
+		AAC6E09C17FFBFAA0085B6BE /* MZFormSheetSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = AAC6E09417FFBFAA0085B6BE /* MZFormSheetSegue.m */; };
+		AAC6E09D17FFBFAA0085B6BE /* NSInvocation+Copy.m in Sources */ = {isa = PBXBuildFile; fileRef = AAC6E09617FFBFAA0085B6BE /* NSInvocation+Copy.m */; };
+		AAC6E09E17FFBFAA0085B6BE /* UIImage+Additional.m in Sources */ = {isa = PBXBuildFile; fileRef = AAC6E09817FFBFAA0085B6BE /* UIImage+Additional.m */; };
+		AAFBEFC917FFB5C100D15C7B /* icon-512.png in Resources */ = {isa = PBXBuildFile; fileRef = AAFBEFC117FFB5C100D15C7B /* icon-512.png */; };
+		AAFBEFCA17FFB5C100D15C7B /* icon-76.png in Resources */ = {isa = PBXBuildFile; fileRef = AAFBEFC217FFB5C100D15C7B /* icon-76.png */; };
+		AAFBEFCB17FFB5C100D15C7B /* icon-40.png in Resources */ = {isa = PBXBuildFile; fileRef = AAFBEFC317FFB5C100D15C7B /* icon-40.png */; };
+		AAFBEFCC17FFB5C100D15C7B /* icon-29.png in Resources */ = {isa = PBXBuildFile; fileRef = AAFBEFC417FFB5C100D15C7B /* icon-29.png */; };
+		AAFBEFCD17FFB5C100D15C7B /* icon-152.png in Resources */ = {isa = PBXBuildFile; fileRef = AAFBEFC517FFB5C100D15C7B /* icon-152.png */; };
+		AAFBEFCE17FFB5C100D15C7B /* icon-1024.png in Resources */ = {isa = PBXBuildFile; fileRef = AAFBEFC617FFB5C100D15C7B /* icon-1024.png */; };
+		AAFBEFCF17FFB5C100D15C7B /* icon-80.png in Resources */ = {isa = PBXBuildFile; fileRef = AAFBEFC717FFB5C100D15C7B /* icon-80.png */; };
+		AAFBEFD017FFB5C100D15C7B /* icon-58.png in Resources */ = {isa = PBXBuildFile; fileRef = AAFBEFC817FFB5C100D15C7B /* icon-58.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,22 +68,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		AA53F36D17FBBDA80055CC7A /* CountdownApp-NonFB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CountdownApp-NonFB.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA53F36D17FBBDA80055CC7A /* Kountdown.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kountdown.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA53F37017FBBDA80055CC7A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		AA53F37217FBBDA80055CC7A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		AA53F37417FBBDA80055CC7A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		AA53F37617FBBDA80055CC7A /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		AA53F37A17FBBDA80055CC7A /* CountdownApp-NonFB-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CountdownApp-NonFB-Info.plist"; sourceTree = "<group>"; };
+		AA53F37A17FBBDA80055CC7A /* Kountdown-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Kountdown-Info.plist"; sourceTree = "<group>"; };
 		AA53F37C17FBBDA80055CC7A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		AA53F37E17FBBDA80055CC7A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		AA53F38017FBBDA80055CC7A /* CountdownApp-NonFB-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CountdownApp-NonFB-Prefix.pch"; sourceTree = "<group>"; };
+		AA53F38017FBBDA80055CC7A /* Kountdown-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Kountdown-Prefix.pch"; sourceTree = "<group>"; };
 		AA53F38117FBBDA80055CC7A /* countdownAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = countdownAppDelegate.h; sourceTree = "<group>"; };
 		AA53F38217FBBDA80055CC7A /* countdownAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = countdownAppDelegate.m; sourceTree = "<group>"; };
 		AA53F38517FBBDA80055CC7A /* CountdownApp_NonFB.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CountdownApp_NonFB.xcdatamodel; sourceTree = "<group>"; };
 		AA53F38717FBBDA80055CC7A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		AA53F38D17FBBDA80055CC7A /* CountdownApp-NonFBTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CountdownApp-NonFBTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA53F38D17FBBDA80055CC7A /* KountdownTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KountdownTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA53F38E17FBBDA80055CC7A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		AA53F39717FBBDA80055CC7A /* CountdownApp-NonFBTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CountdownApp-NonFBTests-Info.plist"; sourceTree = "<group>"; };
+		AA53F39717FBBDA80055CC7A /* KountdownTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KountdownTests-Info.plist"; sourceTree = "<group>"; };
 		AA53F39917FBBDA80055CC7A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		AA53F39B17FBBDA80055CC7A /* CountdownApp_NonFBTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CountdownApp_NonFBTests.m; sourceTree = "<group>"; };
 		AA53F3A517FBBDED0055CC7A /* countdownApp.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = countdownApp.storyboard; sourceTree = "<group>"; };
@@ -83,20 +91,8 @@
 		AA53F3A817FBBE990055CC7A /* countdownViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = countdownViewController.m; sourceTree = "<group>"; };
 		AA53F3AA17FBC1CA0055CC7A /* countdownTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = countdownTableViewController.h; sourceTree = "<group>"; };
 		AA53F3AB17FBC1CA0055CC7A /* countdownTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = countdownTableViewController.m; sourceTree = "<group>"; };
-		AA53F3AE17FBC9DB0055CC7A /* MZFormSheetBackgroundWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MZFormSheetBackgroundWindow.h; sourceTree = "<group>"; };
-		AA53F3AF17FBC9DB0055CC7A /* MZFormSheetBackgroundWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MZFormSheetBackgroundWindow.m; sourceTree = "<group>"; };
-		AA53F3B017FBC9DB0055CC7A /* MZFormSheetController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MZFormSheetController.h; sourceTree = "<group>"; };
-		AA53F3B117FBC9DB0055CC7A /* MZFormSheetController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MZFormSheetController.m; sourceTree = "<group>"; };
-		AA53F3B217FBC9DB0055CC7A /* MZFormSheetSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MZFormSheetSegue.h; sourceTree = "<group>"; };
-		AA53F3B317FBC9DB0055CC7A /* MZFormSheetSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MZFormSheetSegue.m; sourceTree = "<group>"; };
-		AA53F3B417FBC9DB0055CC7A /* UIImage+Additional.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Additional.h"; sourceTree = "<group>"; };
-		AA53F3B517FBC9DB0055CC7A /* UIImage+Additional.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Additional.m"; sourceTree = "<group>"; };
 		AA53F3BA17FBCA090055CC7A /* addEventViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = addEventViewController.h; sourceTree = "<group>"; };
 		AA53F3BB17FBCA090055CC7A /* addEventViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = addEventViewController.m; sourceTree = "<group>"; };
-		AA53F3BD17FBCB690055CC7A /* MZAppearance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MZAppearance.h; sourceTree = "<group>"; };
-		AA53F3BE17FBCB690055CC7A /* MZAppearance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MZAppearance.m; sourceTree = "<group>"; };
-		AA53F3BF17FBCB690055CC7A /* NSInvocation+Copy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSInvocation+Copy.h"; sourceTree = "<group>"; };
-		AA53F3C017FBCB690055CC7A /* NSInvocation+Copy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSInvocation+Copy.m"; sourceTree = "<group>"; };
 		AA53F3C317FBCBA20055CC7A /* countdownModal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = countdownModal.h; sourceTree = "<group>"; };
 		AA53F3C517FBCD910055CC7A /* divider.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = divider.png; sourceTree = "<group>"; };
 		AA53F3C617FBCD910055CC7A /* divider@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "divider@2x.png"; sourceTree = "<group>"; };
@@ -114,6 +110,26 @@
 		AA53F3E017FE48290055CC7A /* close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = close.png; path = images/close.png; sourceTree = "<group>"; };
 		AA53F3E317FE54020055CC7A /* upload@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "upload@2x.png"; path = "images/upload@2x.png"; sourceTree = "<group>"; };
 		AA53F3E417FE54020055CC7A /* upload.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = upload.png; path = images/upload.png; sourceTree = "<group>"; };
+		AAC6E08D17FFBFAA0085B6BE /* MZAppearance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MZAppearance.h; sourceTree = "<group>"; };
+		AAC6E08E17FFBFAA0085B6BE /* MZAppearance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MZAppearance.m; sourceTree = "<group>"; };
+		AAC6E08F17FFBFAA0085B6BE /* MZFormSheetBackgroundWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MZFormSheetBackgroundWindow.h; sourceTree = "<group>"; };
+		AAC6E09017FFBFAA0085B6BE /* MZFormSheetBackgroundWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MZFormSheetBackgroundWindow.m; sourceTree = "<group>"; };
+		AAC6E09117FFBFAA0085B6BE /* MZFormSheetController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MZFormSheetController.h; sourceTree = "<group>"; };
+		AAC6E09217FFBFAA0085B6BE /* MZFormSheetController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MZFormSheetController.m; sourceTree = "<group>"; };
+		AAC6E09317FFBFAA0085B6BE /* MZFormSheetSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MZFormSheetSegue.h; sourceTree = "<group>"; };
+		AAC6E09417FFBFAA0085B6BE /* MZFormSheetSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MZFormSheetSegue.m; sourceTree = "<group>"; };
+		AAC6E09517FFBFAA0085B6BE /* NSInvocation+Copy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSInvocation+Copy.h"; sourceTree = "<group>"; };
+		AAC6E09617FFBFAA0085B6BE /* NSInvocation+Copy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSInvocation+Copy.m"; sourceTree = "<group>"; };
+		AAC6E09717FFBFAA0085B6BE /* UIImage+Additional.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Additional.h"; sourceTree = "<group>"; };
+		AAC6E09817FFBFAA0085B6BE /* UIImage+Additional.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Additional.m"; sourceTree = "<group>"; };
+		AAFBEFC117FFB5C100D15C7B /* icon-512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-512.png"; path = "images/icon-512.png"; sourceTree = "<group>"; };
+		AAFBEFC217FFB5C100D15C7B /* icon-76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-76.png"; path = "images/icon-76.png"; sourceTree = "<group>"; };
+		AAFBEFC317FFB5C100D15C7B /* icon-40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-40.png"; path = "images/icon-40.png"; sourceTree = "<group>"; };
+		AAFBEFC417FFB5C100D15C7B /* icon-29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-29.png"; path = "images/icon-29.png"; sourceTree = "<group>"; };
+		AAFBEFC517FFB5C100D15C7B /* icon-152.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-152.png"; path = "images/icon-152.png"; sourceTree = "<group>"; };
+		AAFBEFC617FFB5C100D15C7B /* icon-1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-1024.png"; path = "images/icon-1024.png"; sourceTree = "<group>"; };
+		AAFBEFC717FFB5C100D15C7B /* icon-80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-80.png"; path = "images/icon-80.png"; sourceTree = "<group>"; };
+		AAFBEFC817FFB5C100D15C7B /* icon-58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-58.png"; path = "images/icon-58.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,8 +171,8 @@
 		AA53F36E17FBBDA80055CC7A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AA53F36D17FBBDA80055CC7A /* CountdownApp-NonFB.app */,
-				AA53F38D17FBBDA80055CC7A /* CountdownApp-NonFBTests.xctest */,
+				AA53F36D17FBBDA80055CC7A /* Kountdown.app */,
+				AA53F38D17FBBDA80055CC7A /* KountdownTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -176,8 +192,8 @@
 		AA53F37817FBBDA80055CC7A /* CountdownApp-NonFB */ = {
 			isa = PBXGroup;
 			children = (
+				AAC6E08C17FFBFAA0085B6BE /* MZFormSheetController */,
 				AA53F3C417FBCD780055CC7A /* Images */,
-				AA53F3AD17FBC9DB0055CC7A /* MZFormSheetController */,
 				AA53F38117FBBDA80055CC7A /* countdownAppDelegate.h */,
 				AA53F38217FBBDA80055CC7A /* countdownAppDelegate.m */,
 				AA53F38717FBBDA80055CC7A /* Images.xcassets */,
@@ -200,10 +216,10 @@
 		AA53F37917FBBDA80055CC7A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				AA53F37A17FBBDA80055CC7A /* CountdownApp-NonFB-Info.plist */,
+				AA53F37A17FBBDA80055CC7A /* Kountdown-Info.plist */,
 				AA53F37B17FBBDA80055CC7A /* InfoPlist.strings */,
 				AA53F37E17FBBDA80055CC7A /* main.m */,
-				AA53F38017FBBDA80055CC7A /* CountdownApp-NonFB-Prefix.pch */,
+				AA53F38017FBBDA80055CC7A /* Kountdown-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -220,34 +236,23 @@
 		AA53F39617FBBDA80055CC7A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				AA53F39717FBBDA80055CC7A /* CountdownApp-NonFBTests-Info.plist */,
+				AA53F39717FBBDA80055CC7A /* KountdownTests-Info.plist */,
 				AA53F39817FBBDA80055CC7A /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		AA53F3AD17FBC9DB0055CC7A /* MZFormSheetController */ = {
-			isa = PBXGroup;
-			children = (
-				AA53F3BD17FBCB690055CC7A /* MZAppearance.h */,
-				AA53F3BE17FBCB690055CC7A /* MZAppearance.m */,
-				AA53F3BF17FBCB690055CC7A /* NSInvocation+Copy.h */,
-				AA53F3C017FBCB690055CC7A /* NSInvocation+Copy.m */,
-				AA53F3AE17FBC9DB0055CC7A /* MZFormSheetBackgroundWindow.h */,
-				AA53F3AF17FBC9DB0055CC7A /* MZFormSheetBackgroundWindow.m */,
-				AA53F3B017FBC9DB0055CC7A /* MZFormSheetController.h */,
-				AA53F3B117FBC9DB0055CC7A /* MZFormSheetController.m */,
-				AA53F3B217FBC9DB0055CC7A /* MZFormSheetSegue.h */,
-				AA53F3B317FBC9DB0055CC7A /* MZFormSheetSegue.m */,
-				AA53F3B417FBC9DB0055CC7A /* UIImage+Additional.h */,
-				AA53F3B517FBC9DB0055CC7A /* UIImage+Additional.m */,
-			);
-			path = MZFormSheetController;
-			sourceTree = "<group>";
-		};
 		AA53F3C417FBCD780055CC7A /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				AAFBEFC117FFB5C100D15C7B /* icon-512.png */,
+				AAFBEFC217FFB5C100D15C7B /* icon-76.png */,
+				AAFBEFC317FFB5C100D15C7B /* icon-40.png */,
+				AAFBEFC417FFB5C100D15C7B /* icon-29.png */,
+				AAFBEFC517FFB5C100D15C7B /* icon-152.png */,
+				AAFBEFC617FFB5C100D15C7B /* icon-1024.png */,
+				AAFBEFC717FFB5C100D15C7B /* icon-80.png */,
+				AAFBEFC817FFB5C100D15C7B /* icon-58.png */,
 				AA53F3E317FE54020055CC7A /* upload@2x.png */,
 				AA53F3E417FE54020055CC7A /* upload.png */,
 				AA53F3DF17FE48290055CC7A /* close@2x.png */,
@@ -266,12 +271,31 @@
 			name = Images;
 			sourceTree = "<group>";
 		};
+		AAC6E08C17FFBFAA0085B6BE /* MZFormSheetController */ = {
+			isa = PBXGroup;
+			children = (
+				AAC6E08D17FFBFAA0085B6BE /* MZAppearance.h */,
+				AAC6E08E17FFBFAA0085B6BE /* MZAppearance.m */,
+				AAC6E08F17FFBFAA0085B6BE /* MZFormSheetBackgroundWindow.h */,
+				AAC6E09017FFBFAA0085B6BE /* MZFormSheetBackgroundWindow.m */,
+				AAC6E09117FFBFAA0085B6BE /* MZFormSheetController.h */,
+				AAC6E09217FFBFAA0085B6BE /* MZFormSheetController.m */,
+				AAC6E09317FFBFAA0085B6BE /* MZFormSheetSegue.h */,
+				AAC6E09417FFBFAA0085B6BE /* MZFormSheetSegue.m */,
+				AAC6E09517FFBFAA0085B6BE /* NSInvocation+Copy.h */,
+				AAC6E09617FFBFAA0085B6BE /* NSInvocation+Copy.m */,
+				AAC6E09717FFBFAA0085B6BE /* UIImage+Additional.h */,
+				AAC6E09817FFBFAA0085B6BE /* UIImage+Additional.m */,
+			);
+			path = MZFormSheetController;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		AA53F36C17FBBDA80055CC7A /* CountdownApp-NonFB */ = {
+		AA53F36C17FBBDA80055CC7A /* Kountdown */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AA53F39F17FBBDA80055CC7A /* Build configuration list for PBXNativeTarget "CountdownApp-NonFB" */;
+			buildConfigurationList = AA53F39F17FBBDA80055CC7A /* Build configuration list for PBXNativeTarget "Kountdown" */;
 			buildPhases = (
 				AA53F36917FBBDA80055CC7A /* Sources */,
 				AA53F36A17FBBDA80055CC7A /* Frameworks */,
@@ -281,14 +305,14 @@
 			);
 			dependencies = (
 			);
-			name = "CountdownApp-NonFB";
+			name = Kountdown;
 			productName = "CountdownApp-NonFB";
-			productReference = AA53F36D17FBBDA80055CC7A /* CountdownApp-NonFB.app */;
+			productReference = AA53F36D17FBBDA80055CC7A /* Kountdown.app */;
 			productType = "com.apple.product-type.application";
 		};
-		AA53F38C17FBBDA80055CC7A /* CountdownApp-NonFBTests */ = {
+		AA53F38C17FBBDA80055CC7A /* KountdownTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AA53F3A217FBBDA80055CC7A /* Build configuration list for PBXNativeTarget "CountdownApp-NonFBTests" */;
+			buildConfigurationList = AA53F3A217FBBDA80055CC7A /* Build configuration list for PBXNativeTarget "KountdownTests" */;
 			buildPhases = (
 				AA53F38917FBBDA80055CC7A /* Sources */,
 				AA53F38A17FBBDA80055CC7A /* Frameworks */,
@@ -299,9 +323,9 @@
 			dependencies = (
 				AA53F39417FBBDA80055CC7A /* PBXTargetDependency */,
 			);
-			name = "CountdownApp-NonFBTests";
+			name = KountdownTests;
 			productName = "CountdownApp-NonFBTests";
-			productReference = AA53F38D17FBBDA80055CC7A /* CountdownApp-NonFBTests.xctest */;
+			productReference = AA53F38D17FBBDA80055CC7A /* KountdownTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -319,7 +343,7 @@
 					};
 				};
 			};
-			buildConfigurationList = AA53F36817FBBDA80055CC7A /* Build configuration list for PBXProject "CountdownApp-NonFB" */;
+			buildConfigurationList = AA53F36817FBBDA80055CC7A /* Build configuration list for PBXProject "Kountdown" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -331,8 +355,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				AA53F36C17FBBDA80055CC7A /* CountdownApp-NonFB */,
-				AA53F38C17FBBDA80055CC7A /* CountdownApp-NonFBTests */,
+				AA53F36C17FBBDA80055CC7A /* Kountdown */,
+				AA53F38C17FBBDA80055CC7A /* KountdownTests */,
 			);
 		};
 /* End PBXProject section */
@@ -349,15 +373,23 @@
 				AA53F3E617FE54020055CC7A /* upload.png in Resources */,
 				AA53F3CC17FBCD910055CC7A /* modalbackground@2x.png in Resources */,
 				AA53F37D17FBBDA80055CC7A /* InfoPlist.strings in Resources */,
+				AAFBEFCD17FFB5C100D15C7B /* icon-152.png in Resources */,
 				AA53F3CB17FBCD910055CC7A /* modalbackground.png in Resources */,
+				AAFBEFCB17FFB5C100D15C7B /* icon-40.png in Resources */,
 				AA53F3CA17FBCD910055CC7A /* divider@2x.png in Resources */,
 				AA53F3D617FE29B00055CC7A /* white-60.png in Resources */,
 				AA53F3DA17FE473D0055CC7A /* white-80.png in Resources */,
+				AAFBEFC917FFB5C100D15C7B /* icon-512.png in Resources */,
+				AAFBEFCA17FFB5C100D15C7B /* icon-76.png in Resources */,
 				AA53F3C917FBCD910055CC7A /* divider.png in Resources */,
 				AA53F3DE17FE47780055CC7A /* white-92.png in Resources */,
 				AA53F3DD17FE47780055CC7A /* white-92@2x.png in Resources */,
+				AAFBEFCC17FFB5C100D15C7B /* icon-29.png in Resources */,
+				AAFBEFCE17FFB5C100D15C7B /* icon-1024.png in Resources */,
+				AAFBEFCF17FFB5C100D15C7B /* icon-80.png in Resources */,
 				AA53F3A617FBBDED0055CC7A /* countdownApp.storyboard in Resources */,
 				AA53F38817FBBDA80055CC7A /* Images.xcassets in Resources */,
+				AAFBEFD017FFB5C100D15C7B /* icon-58.png in Resources */,
 				AA53F3E517FE54020055CC7A /* upload@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -377,19 +409,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAC6E09B17FFBFAA0085B6BE /* MZFormSheetController.m in Sources */,
+				AAC6E09917FFBFAA0085B6BE /* MZAppearance.m in Sources */,
 				AA53F3A917FBBE990055CC7A /* countdownViewController.m in Sources */,
 				AA53F38317FBBDA80055CC7A /* countdownAppDelegate.m in Sources */,
-				AA53F3B917FBC9DB0055CC7A /* UIImage+Additional.m in Sources */,
-				AA53F3B817FBC9DB0055CC7A /* MZFormSheetSegue.m in Sources */,
-				AA53F3B717FBC9DB0055CC7A /* MZFormSheetController.m in Sources */,
 				AA53F3BC17FBCA090055CC7A /* addEventViewController.m in Sources */,
+				AAC6E09E17FFBFAA0085B6BE /* UIImage+Additional.m in Sources */,
 				AA53F3D217FD10190055CC7A /* eventDetailViewController.m in Sources */,
-				AA53F3B617FBC9DB0055CC7A /* MZFormSheetBackgroundWindow.m in Sources */,
-				AA53F3C117FBCB690055CC7A /* MZAppearance.m in Sources */,
 				AA53F38617FBBDA80055CC7A /* CountdownApp_NonFB.xcdatamodeld in Sources */,
 				AA53F3AC17FBC1CA0055CC7A /* countdownTableViewController.m in Sources */,
+				AAC6E09C17FFBFAA0085B6BE /* MZFormSheetSegue.m in Sources */,
 				AA53F37F17FBBDA80055CC7A /* main.m in Sources */,
-				AA53F3C217FBCB690055CC7A /* NSInvocation+Copy.m in Sources */,
+				AAC6E09A17FFBFAA0085B6BE /* MZFormSheetBackgroundWindow.m in Sources */,
+				AAC6E09D17FFBFAA0085B6BE /* NSInvocation+Copy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -406,7 +438,7 @@
 /* Begin PBXTargetDependency section */
 		AA53F39417FBBDA80055CC7A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = AA53F36C17FBBDA80055CC7A /* CountdownApp-NonFB */;
+			target = AA53F36C17FBBDA80055CC7A /* Kountdown */;
 			targetProxy = AA53F39317FBBDA80055CC7A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -508,12 +540,12 @@
 		AA53F3A017FBBDA80055CC7A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Steve Ottenad (554UWU3574)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "CountdownApp-NonFB/CountdownApp-NonFB-Prefix.pch";
-				INFOPLIST_FILE = "CountdownApp-NonFB/CountdownApp-NonFB-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "CountdownApp-NonFB/Kountdown-Prefix.pch";
+				INFOPLIST_FILE = "CountdownApp-NonFB/Kountdown-Info.plist";
+				PRODUCT_NAME = Kountdown;
+				PROVISIONING_PROFILE = "52AF075D-E384-4132-ACF8-8410B36FFDA3";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -521,12 +553,12 @@
 		AA53F3A117FBBDA80055CC7A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Steve Ottenad (554UWU3574)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "CountdownApp-NonFB/CountdownApp-NonFB-Prefix.pch";
-				INFOPLIST_FILE = "CountdownApp-NonFB/CountdownApp-NonFB-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "CountdownApp-NonFB/Kountdown-Prefix.pch";
+				INFOPLIST_FILE = "CountdownApp-NonFB/Kountdown-Info.plist";
+				PRODUCT_NAME = Kountdown;
+				PROVISIONING_PROFILE = "52AF075D-E384-4132-ACF8-8410B36FFDA3";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -547,8 +579,8 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "CountdownApp-NonFBTests/CountdownApp-NonFBTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "CountdownApp-NonFBTests/KountdownTests-Info.plist";
+				PRODUCT_NAME = KountdownTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -566,8 +598,8 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CountdownApp-NonFB/CountdownApp-NonFB-Prefix.pch";
-				INFOPLIST_FILE = "CountdownApp-NonFBTests/CountdownApp-NonFBTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "CountdownApp-NonFBTests/KountdownTests-Info.plist";
+				PRODUCT_NAME = KountdownTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -576,7 +608,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		AA53F36817FBBDA80055CC7A /* Build configuration list for PBXProject "CountdownApp-NonFB" */ = {
+		AA53F36817FBBDA80055CC7A /* Build configuration list for PBXProject "Kountdown" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AA53F39D17FBBDA80055CC7A /* Debug */,
@@ -585,21 +617,23 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AA53F39F17FBBDA80055CC7A /* Build configuration list for PBXNativeTarget "CountdownApp-NonFB" */ = {
+		AA53F39F17FBBDA80055CC7A /* Build configuration list for PBXNativeTarget "Kountdown" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AA53F3A017FBBDA80055CC7A /* Debug */,
 				AA53F3A117FBBDA80055CC7A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		AA53F3A217FBBDA80055CC7A /* Build configuration list for PBXNativeTarget "CountdownApp-NonFBTests" */ = {
+		AA53F3A217FBBDA80055CC7A /* Build configuration list for PBXNativeTarget "KountdownTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AA53F3A317FBBDA80055CC7A /* Debug */,
 				AA53F3A417FBBDA80055CC7A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

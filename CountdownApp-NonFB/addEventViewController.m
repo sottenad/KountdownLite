@@ -50,6 +50,7 @@
     
     CGRect timePickerFrame = CGRectMake(0,700,0,0);
     UIDatePicker *myTimePicker = [[UIDatePicker alloc] initWithFrame:timePickerFrame];
+    //myTimePicker.backgroundColor = [UIColor whiteColor];
     [myTimePicker addTarget:self action:@selector(eventTimePickerChanged:) forControlEvents:UIControlEventValueChanged];
     myTimePicker.datePickerMode = UIDatePickerModeTime;
     eventTime.inputView = myTimePicker;
@@ -111,6 +112,7 @@
 -(void) takePicture:(id) sender
 {
     UIImagePickerController *imagePicker = [[UIImagePickerController alloc] init];
+    [imagePicker shouldAutorotate];
     [imagePicker setSourceType:UIImagePickerControllerSourceTypePhotoLibrary];
     [imagePicker setDelegate:self];
     [self presentViewController:imagePicker animated:YES completion:nil];

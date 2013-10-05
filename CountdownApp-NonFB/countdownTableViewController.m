@@ -34,16 +34,16 @@
     // Fetch the countdowns from persistent data store
     NSManagedObjectContext *managedObjectContext = [self managedObjectContext];
     NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] initWithEntityName:@"Countdown"];
+    NSSortDescriptor *dateSort = [[NSSortDescriptor alloc] initWithKey:@"deadline" ascending:YES selector:nil];
+    NSArray *sorters = [[NSArray alloc] initWithObjects:dateSort, nil];
+    [fetchRequest setSortDescriptors:sorters];
     countdowns = [[managedObjectContext executeFetchRequest:fetchRequest error:nil]mutableCopy];
     
-    NSLog(@"%@", countdowns);
+    //NSLog(@"%@", countdowns);
     
     UIBarButtonItem *addButton = [UIBarButtonItem alloc];
     addButton.title = @"Add";
     addButton.enabled = YES;
-    //[addButton addTarget:self
-    //            action:@selector(addReminder)
-    // forControlEvents:UIControlEventTouchUpInside];
     addButton.target = self;
     addButton.action = @selector(addCountdown);
     self.navigationItem.rightBarButtonItem = addButton;
@@ -275,7 +275,12 @@
 }
 
 -(void)reloadList {
-    NSLog(@"reload List");
+    NSManagedObjectContext *managedObjectContext = [self managedObjectContext];
+    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] initWithEntityName:@"Countdown"];
+    NSSortDescriptor *dateSort = [[NSSortDescriptor alloc] initWithKey:@"deadline" ascending:YES selector:nil];
+    NSArray *sorters = [[NSArray alloc] initWithObjects:dateSort, nil];
+    [fetchRequest setSortDescriptors:sorters];
+    countdowns = [[managedObjectContext executeFetchRequest:fetchRequest error:nil]mutableCopy];
     [self loadTableData];
     
 }

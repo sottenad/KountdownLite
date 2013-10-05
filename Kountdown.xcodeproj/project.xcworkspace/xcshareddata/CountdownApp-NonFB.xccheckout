@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>D5B71C9D-96BA-46C7-9977-688111E81523</string>
+	<key>IDESourceControlProjectName</key>
+	<string>CountdownApp-NonFB</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>8366B03C-4F94-42C4-A07F-921C1524FEBA</key>
+		<string>https://github.com/sottenad/Countdownapp-nonfb.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>CountdownApp-NonFB.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>8366B03C-4F94-42C4-A07F-921C1524FEBA</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/sottenad/Countdownapp-nonfb.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>8366B03C-4F94-42C4-A07F-921C1524FEBA</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>8366B03C-4F94-42C4-A07F-921C1524FEBA</string>
+			<key>IDESourceControlWCCName</key>
+			<string>CountdownApp-NonFB</string>
+		</dict>
+	</array>
+</dict>
+</plist>
