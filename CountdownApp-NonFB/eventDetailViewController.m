@@ -14,7 +14,7 @@
 
 @implementation eventDetailViewController
 
-@synthesize myDate, myTime, myImage, myTitle, fontColor, countdownTitle, countdownDate, mainImageView;
+@synthesize myDate, myImage, myTitle, fontColor, countdownTitle, countdownDate, mainImageView;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -38,9 +38,9 @@
     [tf setDateFormat:@"h:m"];
     [df setTimeZone:[NSTimeZone systemTimeZone]];    
 
-    NSDate *countdownNSDate = [df dateFromString:myDate];
-    NSDate *countdownNSTime = [tf dateFromString:myTime];
-    myCombinedDate = [self combineDate:countdownNSDate withTime:countdownNSTime];
+    countdownNSDate = [df dateFromString:myDate];
+
+
 
 
     
@@ -60,7 +60,7 @@
 }
 
 -(void) updateTimer{
-    NSTimeInterval secondsBetweenDates = [myCombinedDate timeIntervalSinceDate: [NSDate date]];
+    NSTimeInterval secondsBetweenDates = [countdownNSDate timeIntervalSinceDate: [NSDate date]];
     double secondsInAMinute = 60;
     double secondsInAnHour = secondsInAMinute * 60;
     double secondsInADay = secondsInAnHour * 24;

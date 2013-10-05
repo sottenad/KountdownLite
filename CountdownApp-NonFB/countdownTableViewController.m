@@ -185,7 +185,6 @@
     int r = fmod((double)indexPath.row, 4.0);
     
     evd.myDate = [NSString stringWithFormat:@"%@", [countdown valueForKey:@"deadline"]];
-    evd.myTime = [NSString stringWithFormat:@"%@", [countdown valueForKey:@"time"]];
     evd.myTitle = [NSString stringWithFormat:@"%@", [countdown valueForKey:@"title"]];
     UIImage *mainImage = [[UIImage alloc] initWithData:[countdown valueForKey:@"photo"]];
     evd.fontColor = [colors objectAtIndex:r];

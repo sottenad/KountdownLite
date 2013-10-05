@@ -47,16 +47,6 @@
     
     eventDate.inputView = myDatePicker;
     
-    
-    CGRect timePickerFrame = CGRectMake(0,700,0,0);
-    UIDatePicker *myTimePicker = [[UIDatePicker alloc] initWithFrame:timePickerFrame];
-    //myTimePicker.backgroundColor = [UIColor whiteColor];
-    [myTimePicker addTarget:self action:@selector(eventTimePickerChanged:) forControlEvents:UIControlEventValueChanged];
-    myTimePicker.datePickerMode = UIDatePickerModeTime;
-    eventTime.inputView = myTimePicker;
-    
-
-    
 }
 
 - (void)eventDatePickerChanged:(id)sender
@@ -64,10 +54,7 @@
     eventDate.text = [df stringFromDate:[sender date]];
 }
 
-- (void)eventTimePickerChanged:(id)sender
-{
-    eventTime.text = [tf stringFromDate:[sender date]];
-}
+
 
 
 -(void)createEvent:(id)sender{
@@ -86,7 +73,6 @@
     NSManagedObjectContext *context = [self managedObjectContext];
     NSManagedObject *newReminder = [NSEntityDescription insertNewObjectForEntityForName:@"Countdown" inManagedObjectContext:context];
     [newReminder setValue:eventName.text forKey:@"title"];
-    [newReminder setValue:eventTime.text forKey:@"time"];
     [newReminder setValue:dateFromString forKey:@"deadline"];
     [newReminder setValue:imageData forKey:@"photo"];
     

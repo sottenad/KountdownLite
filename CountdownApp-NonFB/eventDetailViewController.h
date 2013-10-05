@@ -9,14 +9,14 @@
 #import <UIKit/UIKit.h>
 
 @interface eventDetailViewController : UIViewController{
-    NSDate *myCombinedDate;
+    NSDate *countdownNSDate;
     
 }
 
 @property UIImage *myImage;
 @property NSString *myTitle;
 @property NSString *myDate;
-@property NSString *myTime;
+
 @property UIColor *fontColor;
 
 
