@@ -158,7 +158,7 @@
         formSheet.cornerRadius = 8.0;
         formSheet.portraitTopInset = 6.0;
         formSheet.landscapeTopInset = 6.0;
-        formSheet.presentedFormSheetSize = CGSizeMake(270, 365);
+        formSheet.presentedFormSheetSize = CGSizeMake(270, 335);
         formSheet.willPresentCompletionHandler = ^(UIViewController *presentedFSViewController){
             presentedFSViewController.view.autoresizingMask = presentedFSViewController.view.autoresizingMask | UIViewAutoresizingFlexibleWidth;
         };

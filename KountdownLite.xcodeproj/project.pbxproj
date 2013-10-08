@@ -41,6 +41,10 @@
 		AA53F3E217FE48290055CC7A /* close.png in Resources */ = {isa = PBXBuildFile; fileRef = AA53F3E017FE48290055CC7A /* close.png */; };
 		AA53F3E517FE54020055CC7A /* upload@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AA53F3E317FE54020055CC7A /* upload@2x.png */; };
 		AA53F3E617FE54020055CC7A /* upload.png in Resources */ = {isa = PBXBuildFile; fileRef = AA53F3E417FE54020055CC7A /* upload.png */; };
+		AA6CB21017FFCE0D0035EB9C /* landscape_nonretina_1024x768.png in Resources */ = {isa = PBXBuildFile; fileRef = AA6CB20C17FFCE0D0035EB9C /* landscape_nonretina_1024x768.png */; };
+		AA6CB21117FFCE0D0035EB9C /* landscape_retina_2048x1536.png in Resources */ = {isa = PBXBuildFile; fileRef = AA6CB20D17FFCE0D0035EB9C /* landscape_retina_2048x1536.png */; };
+		AA6CB21217FFCE0D0035EB9C /* portrait_nonretina_768x1024.png in Resources */ = {isa = PBXBuildFile; fileRef = AA6CB20E17FFCE0D0035EB9C /* portrait_nonretina_768x1024.png */; };
+		AA6CB21317FFCE0D0035EB9C /* portrait_retina_1536x2048.png in Resources */ = {isa = PBXBuildFile; fileRef = AA6CB20F17FFCE0D0035EB9C /* portrait_retina_1536x2048.png */; };
 		AAC6E09917FFBFAA0085B6BE /* MZAppearance.m in Sources */ = {isa = PBXBuildFile; fileRef = AAC6E08E17FFBFAA0085B6BE /* MZAppearance.m */; };
 		AAC6E09A17FFBFAA0085B6BE /* MZFormSheetBackgroundWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = AAC6E09017FFBFAA0085B6BE /* MZFormSheetBackgroundWindow.m */; };
 		AAC6E09B17FFBFAA0085B6BE /* MZFormSheetController.m in Sources */ = {isa = PBXBuildFile; fileRef = AAC6E09217FFBFAA0085B6BE /* MZFormSheetController.m */; };
@@ -68,22 +72,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		AA53F36D17FBBDA80055CC7A /* Kountdown.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kountdown.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA53F36D17FBBDA80055CC7A /* KountdownLite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KountdownLite.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA53F37017FBBDA80055CC7A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		AA53F37217FBBDA80055CC7A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		AA53F37417FBBDA80055CC7A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		AA53F37617FBBDA80055CC7A /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		AA53F37A17FBBDA80055CC7A /* Kountdown-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Kountdown-Info.plist"; sourceTree = "<group>"; };
+		AA53F37A17FBBDA80055CC7A /* KountdownLite-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KountdownLite-Info.plist"; sourceTree = "<group>"; };
 		AA53F37C17FBBDA80055CC7A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		AA53F37E17FBBDA80055CC7A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		AA53F38017FBBDA80055CC7A /* Kountdown-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Kountdown-Prefix.pch"; sourceTree = "<group>"; };
+		AA53F38017FBBDA80055CC7A /* KountdownLite-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KountdownLite-Prefix.pch"; sourceTree = "<group>"; };
 		AA53F38117FBBDA80055CC7A /* countdownAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = countdownAppDelegate.h; sourceTree = "<group>"; };
 		AA53F38217FBBDA80055CC7A /* countdownAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = countdownAppDelegate.m; sourceTree = "<group>"; };
 		AA53F38517FBBDA80055CC7A /* CountdownApp_NonFB.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CountdownApp_NonFB.xcdatamodel; sourceTree = "<group>"; };
 		AA53F38717FBBDA80055CC7A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		AA53F38D17FBBDA80055CC7A /* KountdownTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KountdownTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA53F38D17FBBDA80055CC7A /* KountdownLiteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KountdownLiteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA53F38E17FBBDA80055CC7A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		AA53F39717FBBDA80055CC7A /* KountdownTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KountdownTests-Info.plist"; sourceTree = "<group>"; };
+		AA53F39717FBBDA80055CC7A /* KountdownLiteTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KountdownLiteTests-Info.plist"; sourceTree = "<group>"; };
 		AA53F39917FBBDA80055CC7A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		AA53F39B17FBBDA80055CC7A /* CountdownApp_NonFBTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CountdownApp_NonFBTests.m; sourceTree = "<group>"; };
 		AA53F3A517FBBDED0055CC7A /* countdownApp.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = countdownApp.storyboard; sourceTree = "<group>"; };
@@ -110,6 +114,10 @@
 		AA53F3E017FE48290055CC7A /* close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = close.png; path = images/close.png; sourceTree = "<group>"; };
 		AA53F3E317FE54020055CC7A /* upload@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "upload@2x.png"; path = "images/upload@2x.png"; sourceTree = "<group>"; };
 		AA53F3E417FE54020055CC7A /* upload.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = upload.png; path = images/upload.png; sourceTree = "<group>"; };
+		AA6CB20C17FFCE0D0035EB9C /* landscape_nonretina_1024x768.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = landscape_nonretina_1024x768.png; sourceTree = "<group>"; };
+		AA6CB20D17FFCE0D0035EB9C /* landscape_retina_2048x1536.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = landscape_retina_2048x1536.png; sourceTree = "<group>"; };
+		AA6CB20E17FFCE0D0035EB9C /* portrait_nonretina_768x1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = portrait_nonretina_768x1024.png; sourceTree = "<group>"; };
+		AA6CB20F17FFCE0D0035EB9C /* portrait_retina_1536x2048.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = portrait_retina_1536x2048.png; sourceTree = "<group>"; };
 		AAC6E08D17FFBFAA0085B6BE /* MZAppearance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MZAppearance.h; sourceTree = "<group>"; };
 		AAC6E08E17FFBFAA0085B6BE /* MZAppearance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MZAppearance.m; sourceTree = "<group>"; };
 		AAC6E08F17FFBFAA0085B6BE /* MZFormSheetBackgroundWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MZFormSheetBackgroundWindow.h; sourceTree = "<group>"; };
@@ -161,8 +169,8 @@
 		AA53F36417FBBDA80055CC7A = {
 			isa = PBXGroup;
 			children = (
-				AA53F37817FBBDA80055CC7A /* CountdownApp-NonFB */,
-				AA53F39517FBBDA80055CC7A /* CountdownApp-NonFBTests */,
+				AA53F37817FBBDA80055CC7A /* Kountdown */,
+				AA53F39517FBBDA80055CC7A /* KountdownTests */,
 				AA53F36F17FBBDA80055CC7A /* Frameworks */,
 				AA53F36E17FBBDA80055CC7A /* Products */,
 			);
@@ -171,8 +179,8 @@
 		AA53F36E17FBBDA80055CC7A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AA53F36D17FBBDA80055CC7A /* Kountdown.app */,
-				AA53F38D17FBBDA80055CC7A /* KountdownTests.xctest */,
+				AA53F36D17FBBDA80055CC7A /* KountdownLite.app */,
+				AA53F38D17FBBDA80055CC7A /* KountdownLiteTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -189,7 +197,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		AA53F37817FBBDA80055CC7A /* CountdownApp-NonFB */ = {
+		AA53F37817FBBDA80055CC7A /* Kountdown */ = {
 			isa = PBXGroup;
 			children = (
 				AAC6E08C17FFBFAA0085B6BE /* MZFormSheetController */,
@@ -210,33 +218,35 @@
 				AA53F3D017FD10190055CC7A /* eventDetailViewController.h */,
 				AA53F3D117FD10190055CC7A /* eventDetailViewController.m */,
 			);
+			name = Kountdown;
 			path = "CountdownApp-NonFB";
 			sourceTree = "<group>";
 		};
 		AA53F37917FBBDA80055CC7A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				AA53F37A17FBBDA80055CC7A /* Kountdown-Info.plist */,
+				AA53F37A17FBBDA80055CC7A /* KountdownLite-Info.plist */,
 				AA53F37B17FBBDA80055CC7A /* InfoPlist.strings */,
 				AA53F37E17FBBDA80055CC7A /* main.m */,
-				AA53F38017FBBDA80055CC7A /* Kountdown-Prefix.pch */,
+				AA53F38017FBBDA80055CC7A /* KountdownLite-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		AA53F39517FBBDA80055CC7A /* CountdownApp-NonFBTests */ = {
+		AA53F39517FBBDA80055CC7A /* KountdownTests */ = {
 			isa = PBXGroup;
 			children = (
 				AA53F39B17FBBDA80055CC7A /* CountdownApp_NonFBTests.m */,
 				AA53F39617FBBDA80055CC7A /* Supporting Files */,
 			);
+			name = KountdownTests;
 			path = "CountdownApp-NonFBTests";
 			sourceTree = "<group>";
 		};
 		AA53F39617FBBDA80055CC7A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				AA53F39717FBBDA80055CC7A /* KountdownTests-Info.plist */,
+				AA53F39717FBBDA80055CC7A /* KountdownLiteTests-Info.plist */,
 				AA53F39817FBBDA80055CC7A /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
@@ -245,6 +255,10 @@
 		AA53F3C417FBCD780055CC7A /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				AA6CB20C17FFCE0D0035EB9C /* landscape_nonretina_1024x768.png */,
+				AA6CB20D17FFCE0D0035EB9C /* landscape_retina_2048x1536.png */,
+				AA6CB20E17FFCE0D0035EB9C /* portrait_nonretina_768x1024.png */,
+				AA6CB20F17FFCE0D0035EB9C /* portrait_retina_1536x2048.png */,
 				AAFBEFC117FFB5C100D15C7B /* icon-512.png */,
 				AAFBEFC217FFB5C100D15C7B /* icon-76.png */,
 				AAFBEFC317FFB5C100D15C7B /* icon-40.png */,
@@ -293,9 +307,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		AA53F36C17FBBDA80055CC7A /* Kountdown */ = {
+		AA53F36C17FBBDA80055CC7A /* KountdownLite */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AA53F39F17FBBDA80055CC7A /* Build configuration list for PBXNativeTarget "Kountdown" */;
+			buildConfigurationList = AA53F39F17FBBDA80055CC7A /* Build configuration list for PBXNativeTarget "KountdownLite" */;
 			buildPhases = (
 				AA53F36917FBBDA80055CC7A /* Sources */,
 				AA53F36A17FBBDA80055CC7A /* Frameworks */,
@@ -305,14 +319,14 @@
 			);
 			dependencies = (
 			);
-			name = Kountdown;
+			name = KountdownLite;
 			productName = "CountdownApp-NonFB";
-			productReference = AA53F36D17FBBDA80055CC7A /* Kountdown.app */;
+			productReference = AA53F36D17FBBDA80055CC7A /* KountdownLite.app */;
 			productType = "com.apple.product-type.application";
 		};
-		AA53F38C17FBBDA80055CC7A /* KountdownTests */ = {
+		AA53F38C17FBBDA80055CC7A /* KountdownLiteTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AA53F3A217FBBDA80055CC7A /* Build configuration list for PBXNativeTarget "KountdownTests" */;
+			buildConfigurationList = AA53F3A217FBBDA80055CC7A /* Build configuration list for PBXNativeTarget "KountdownLiteTests" */;
 			buildPhases = (
 				AA53F38917FBBDA80055CC7A /* Sources */,
 				AA53F38A17FBBDA80055CC7A /* Frameworks */,
@@ -323,9 +337,9 @@
 			dependencies = (
 				AA53F39417FBBDA80055CC7A /* PBXTargetDependency */,
 			);
-			name = KountdownTests;
+			name = KountdownLiteTests;
 			productName = "CountdownApp-NonFBTests";
-			productReference = AA53F38D17FBBDA80055CC7A /* KountdownTests.xctest */;
+			productReference = AA53F38D17FBBDA80055CC7A /* KountdownLiteTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -338,12 +352,15 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Steve Ottenad";
 				TargetAttributes = {
+					AA53F36C17FBBDA80055CC7A = {
+						DevelopmentTeam = EZE5WJ4JR4;
+					};
 					AA53F38C17FBBDA80055CC7A = {
 						TestTargetID = AA53F36C17FBBDA80055CC7A;
 					};
 				};
 			};
-			buildConfigurationList = AA53F36817FBBDA80055CC7A /* Build configuration list for PBXProject "Kountdown" */;
+			buildConfigurationList = AA53F36817FBBDA80055CC7A /* Build configuration list for PBXProject "KountdownLite" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -355,8 +372,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				AA53F36C17FBBDA80055CC7A /* Kountdown */,
-				AA53F38C17FBBDA80055CC7A /* KountdownTests */,
+				AA53F36C17FBBDA80055CC7A /* KountdownLite */,
+				AA53F38C17FBBDA80055CC7A /* KountdownLiteTests */,
 			);
 		};
 /* End PBXProject section */
@@ -380,14 +397,18 @@
 				AA53F3D617FE29B00055CC7A /* white-60.png in Resources */,
 				AA53F3DA17FE473D0055CC7A /* white-80.png in Resources */,
 				AAFBEFC917FFB5C100D15C7B /* icon-512.png in Resources */,
+				AA6CB21117FFCE0D0035EB9C /* landscape_retina_2048x1536.png in Resources */,
 				AAFBEFCA17FFB5C100D15C7B /* icon-76.png in Resources */,
 				AA53F3C917FBCD910055CC7A /* divider.png in Resources */,
+				AA6CB21017FFCE0D0035EB9C /* landscape_nonretina_1024x768.png in Resources */,
 				AA53F3DE17FE47780055CC7A /* white-92.png in Resources */,
 				AA53F3DD17FE47780055CC7A /* white-92@2x.png in Resources */,
 				AAFBEFCC17FFB5C100D15C7B /* icon-29.png in Resources */,
 				AAFBEFCE17FFB5C100D15C7B /* icon-1024.png in Resources */,
 				AAFBEFCF17FFB5C100D15C7B /* icon-80.png in Resources */,
+				AA6CB21217FFCE0D0035EB9C /* portrait_nonretina_768x1024.png in Resources */,
 				AA53F3A617FBBDED0055CC7A /* countdownApp.storyboard in Resources */,
+				AA6CB21317FFCE0D0035EB9C /* portrait_retina_1536x2048.png in Resources */,
 				AA53F38817FBBDA80055CC7A /* Images.xcassets in Resources */,
 				AAFBEFD017FFB5C100D15C7B /* icon-58.png in Resources */,
 				AA53F3E517FE54020055CC7A /* upload@2x.png in Resources */,
@@ -438,7 +459,7 @@
 /* Begin PBXTargetDependency section */
 		AA53F39417FBBDA80055CC7A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = AA53F36C17FBBDA80055CC7A /* Kountdown */;
+			target = AA53F36C17FBBDA80055CC7A /* KountdownLite */;
 			targetProxy = AA53F39317FBBDA80055CC7A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -540,12 +561,13 @@
 		AA53F3A017FBBDA80055CC7A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Steve Ottenad (554UWU3574)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Steve Ottenad (554UWU3574)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "CountdownApp-NonFB/Kountdown-Prefix.pch";
-				INFOPLIST_FILE = "CountdownApp-NonFB/Kountdown-Info.plist";
-				PRODUCT_NAME = Kountdown;
-				PROVISIONING_PROFILE = "52AF075D-E384-4132-ACF8-8410B36FFDA3";
+				GCC_PREFIX_HEADER = "CountdownApp-NonFB/KountdownLite-Prefix.pch";
+				INFOPLIST_FILE = "CountdownApp-NonFB/KountdownLite-Info.plist";
+				PRODUCT_NAME = KountdownLite;
+				PROVISIONING_PROFILE = "E8CC8533-0597-4EBD-824E-5998458F8918";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -553,12 +575,13 @@
 		AA53F3A117FBBDA80055CC7A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Steve Ottenad (554UWU3574)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Steve Ottenad (554UWU3574)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "CountdownApp-NonFB/Kountdown-Prefix.pch";
-				INFOPLIST_FILE = "CountdownApp-NonFB/Kountdown-Info.plist";
-				PRODUCT_NAME = Kountdown;
-				PROVISIONING_PROFILE = "52AF075D-E384-4132-ACF8-8410B36FFDA3";
+				GCC_PREFIX_HEADER = "CountdownApp-NonFB/KountdownLite-Prefix.pch";
+				INFOPLIST_FILE = "CountdownApp-NonFB/KountdownLite-Info.plist";
+				PRODUCT_NAME = KountdownLite;
+				PROVISIONING_PROFILE = "E8CC8533-0597-4EBD-824E-5998458F8918";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -579,8 +602,8 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "CountdownApp-NonFBTests/KountdownTests-Info.plist";
-				PRODUCT_NAME = KountdownTests;
+				INFOPLIST_FILE = "CountdownApp-NonFBTests/KountdownLiteTests-Info.plist";
+				PRODUCT_NAME = KountdownLiteTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -598,8 +621,8 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CountdownApp-NonFB/CountdownApp-NonFB-Prefix.pch";
-				INFOPLIST_FILE = "CountdownApp-NonFBTests/KountdownTests-Info.plist";
-				PRODUCT_NAME = KountdownTests;
+				INFOPLIST_FILE = "CountdownApp-NonFBTests/KountdownLiteTests-Info.plist";
+				PRODUCT_NAME = KountdownLiteTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -608,7 +631,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		AA53F36817FBBDA80055CC7A /* Build configuration list for PBXProject "Kountdown" */ = {
+		AA53F36817FBBDA80055CC7A /* Build configuration list for PBXProject "KountdownLite" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AA53F39D17FBBDA80055CC7A /* Debug */,
@@ -617,7 +640,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AA53F39F17FBBDA80055CC7A /* Build configuration list for PBXNativeTarget "Kountdown" */ = {
+		AA53F39F17FBBDA80055CC7A /* Build configuration list for PBXNativeTarget "KountdownLite" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AA53F3A017FBBDA80055CC7A /* Debug */,
@@ -626,7 +649,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AA53F3A217FBBDA80055CC7A /* Build configuration list for PBXNativeTarget "KountdownTests" */ = {
+		AA53F3A217FBBDA80055CC7A /* Build configuration list for PBXNativeTarget "KountdownLiteTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AA53F3A317FBBDA80055CC7A /* Debug */,

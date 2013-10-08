@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "AA53F36C17FBBDA80055CC7A"
-               BuildableName = "KountdownApp-NonFB.app"
-               BlueprintName = "Kountdown"
-               ReferencedContainer = "container:Kountdown.xcodeproj">
+               BuildableName = "KountdownLite.app"
+               BlueprintName = "KountdownLite"
+               ReferencedContainer = "container:KountdownLite.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "AA53F38C17FBBDA80055CC7A"
-               BuildableName = "KountdownApp-NonFBTests.xctest"
-               BlueprintName = "KountdownTests"
-               ReferencedContainer = "container:Kountdown.xcodeproj">
+               BuildableName = "KountdownLiteTests.xctest"
+               BlueprintName = "KountdownLiteTests"
+               ReferencedContainer = "container:KountdownLite.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -43,9 +43,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "AA53F36C17FBBDA80055CC7A"
-            BuildableName = "KountdownApp-NonFB.app"
-            BlueprintName = "Kountdown"
-            ReferencedContainer = "container:Kountdown.xcodeproj">
+            BuildableName = "KountdownLite.app"
+            BlueprintName = "KountdownLite"
+            ReferencedContainer = "container:KountdownLite.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -62,9 +62,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "AA53F36C17FBBDA80055CC7A"
-            BuildableName = "KountdownApp-NonFB.app"
-            BlueprintName = "Kountdown"
-            ReferencedContainer = "container:Kountdown.xcodeproj">
+            BuildableName = "KountdownLite.app"
+            BlueprintName = "KountdownLite"
+            ReferencedContainer = "container:KountdownLite.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -80,9 +80,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "AA53F36C17FBBDA80055CC7A"
-            BuildableName = "KountdownApp-NonFB.app"
-            BlueprintName = "Kountdown"
-            ReferencedContainer = "container:Kountdown.xcodeproj">
+            BuildableName = "KountdownLite.app"
+            BlueprintName = "KountdownLite"
+            ReferencedContainer = "container:KountdownLite.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
