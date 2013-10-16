@@ -553,6 +553,8 @@
 		AA53F3A017FBBDA80055CC7A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-2";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-2";
 				CODE_SIGN_IDENTITY = "iPhone Developer: Steve Ottenad (554UWU3574)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Steve Ottenad (554UWU3574)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -567,6 +569,8 @@
 		AA53F3A117FBBDA80055CC7A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-2";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-2";
 				CODE_SIGN_IDENTITY = "iPhone Developer: Steve Ottenad (554UWU3574)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Steve Ottenad (554UWU3574)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;

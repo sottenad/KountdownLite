@@ -28,11 +28,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="center" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="10" reuseIdentifier="Cell" rowHeight="102" id="j0K-GE-CmE">
+                            <tableViewCell contentMode="center" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="10" reuseIdentifier="Cell" rowHeight="102" id="j0K-GE-CmE">
                                 <rect key="frame" x="0.0" y="86" width="768" height="102"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" tag="1" contentMode="center" tableViewCell="j0K-GE-CmE" id="2X0-df-v8K">
-                                    <rect key="frame" x="0.0" y="0.0" width="768" height="101"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="735" height="101"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="100" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ZPB-dr-LaS">
@@ -42,7 +42,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="101" contentMode="right" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="D4C-1F-CG6">
-                                            <rect key="frame" x="619" y="0.0" width="139" height="101"/>
+                                            <rect key="frame" x="586" y="0.0" width="139" height="101"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                             <accessibility key="accessibilityConfiguration">
                                                 <accessibilityTraits key="traits" none="YES" staticText="YES" notEnabled="YES"/>
@@ -52,6 +52,9 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="JBg-q7-5JP" kind="push" identifier="toDetail" id="7Ea-NQ-yac"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -152,6 +155,20 @@
             </objects>
             <point key="canvasLocation" x="700" y="-621"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="NLq-P5-Bgb">
+            <objects>
+                <viewController id="sD9-Xg-uav" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Pbs-z9-Vdo">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JTB-Ul-VuA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1845" y="-85"/>
+        </scene>
         <!--Event Detail View Controller-->
         <scene sceneID="Mc1-gw-Sz6">
             <objects>
@@ -180,25 +197,23 @@
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="22"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="peo-Lf-nJG">
-                                <rect key="frame" x="708" y="20" width="40" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="close.png">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Yfc-jo-TU6">
+                                <rect key="frame" x="324" y="204" width="120" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Take Screen Shot">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <action selector="closeDetailView" destination="JBg-q7-5JP" eventType="touchUpInside" id="qP1-m6-1jv"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="fdf-8U-rSf"/>
                     <nil key="simulatedTopBarMetrics"/>
                     <connections>
-                        <outlet property="closeButton" destination="peo-Lf-nJG" id="XTo-fx-f7w"/>
                         <outlet property="countdownDate" destination="Wmp-WL-HmX" id="SiZ-8c-IF8"/>
                         <outlet property="countdownTitle" destination="fDl-0T-w0a" id="7kT-1M-Mnu"/>
                         <outlet property="mainImageView" destination="wP1-hn-YVJ" id="pu1-ZR-iCm"/>
+                        <outlet property="screenShotButton" destination="Yfc-jo-TU6" id="lF5-Av-yx1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jgw-Hu-5HB" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -207,7 +222,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="close.png" width="40" height="40"/>
         <image name="modalbackground.png" width="270" height="365"/>
         <image name="upload.png" width="241" height="40"/>
         <image name="white-92.png" width="1024" height="86"/>

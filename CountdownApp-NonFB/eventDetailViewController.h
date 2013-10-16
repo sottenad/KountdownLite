@@ -24,6 +24,7 @@
 @property IBOutlet UILabel *countdownTitle;
 @property IBOutlet UILabel *countdownDate;
 @property IBOutlet UIButton *closeButton;
+@property IBOutlet UIButton *screenShotButton;
 
 
 -(void) updateTimer;

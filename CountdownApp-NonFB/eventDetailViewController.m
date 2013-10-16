@@ -69,10 +69,10 @@
     NSInteger hoursBetweenDates = secondsBetweenDates / secondsInAnHour;
     NSInteger daysBetweenDates = secondsBetweenDates / secondsInADay;
     
-    NSString *daysString = [[NSString alloc] initWithFormat:@"%i Day%@", daysBetweenDates, (daysBetweenDates == 1 ? @"" : @"s")];
-    NSString *hoursString = [[NSString alloc] initWithFormat:@"%i Hour%@", hoursBetweenDates%24, (hoursBetweenDates%24 == 1 ? @"" : @"s")];
-    NSString *minutesString = [[NSString alloc] initWithFormat:@"%i Minute%@", minutesBetweenDates%60, (minutesBetweenDates%60 == 1 ? @"" : @"s")];
-    NSString *secondsString = [[NSString alloc] initWithFormat:@"%i Second%@", (NSInteger)secondsBetweenDates%60, ((NSInteger)secondsBetweenDates%60 == 1 ? @"" : @"s")];
+    NSString *daysString = [[NSString alloc] initWithFormat:@"%li Day%@", (long)daysBetweenDates, (daysBetweenDates == 1 ? @"" : @"s")];
+    NSString *hoursString = [[NSString alloc] initWithFormat:@"%li Hour%@", (long)hoursBetweenDates%24, (hoursBetweenDates%24 == 1 ? @"" : @"s")];
+    NSString *minutesString = [[NSString alloc] initWithFormat:@"%li Minute%@", (long)minutesBetweenDates%60, (minutesBetweenDates%60 == 1 ? @"" : @"s")];
+    NSString *secondsString = [[NSString alloc] initWithFormat:@"%li Second%@", (long)secondsBetweenDates%60, ((NSInteger)secondsBetweenDates%60 == 1 ? @"" : @"s")];
     
     
     NSString *finalString = [[NSString alloc] initWithFormat:@"%@, %@, %@ & %@", daysString, hoursString, minutesString,secondsString];

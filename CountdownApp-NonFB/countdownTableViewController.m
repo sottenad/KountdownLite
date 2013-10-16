@@ -119,7 +119,7 @@
                                                         fromDate:[NSDate date]
                                                           toDate: eventDate
                                                          options:0];
-    NSString *daysApart = [NSString stringWithFormat:@"%i", [components day]];
+    NSString *daysApart = [NSString stringWithFormat:@"%li", (long)[components day]];
 
     int r = fmod((double)indexPath.row, 4.0);
     
@@ -178,19 +178,7 @@
 
 - (void)tableView: (UITableView *)tableView didSelectRowAtIndexPath: (NSIndexPath *)indexPath
 {
-    NSManagedObject *countdown = [countdowns objectAtIndex:indexPath.row];
-    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"countdownApp" bundle:[NSBundle mainBundle]];
-    eventDetailViewController *evd = [storyboard instantiateViewControllerWithIdentifier:@"eventDetailView"] ;
-
-    int r = fmod((double)indexPath.row, 4.0);
-    
-    evd.myDate = [NSString stringWithFormat:@"%@", [countdown valueForKey:@"deadline"]];
-    evd.myTitle = [NSString stringWithFormat:@"%@", [countdown valueForKey:@"title"]];
-    UIImage *mainImage = [[UIImage alloc] initWithData:[countdown valueForKey:@"photo"]];
-    evd.fontColor = [colors objectAtIndex:r];
-    evd.myImage = mainImage;
-    [self presentViewController:evd animated:YES completion:nil];
-
+    [self performSegueWithIdentifier:@"toDetail" sender:nil];
 }
 
 /*
@@ -254,17 +242,38 @@
 }
 */
 
-/*
+
 #pragma mark - Navigation
 
 // In a story board-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    if ([[segue identifier] isEqualToString:@"toDetail"]) {
+        
+        //Get the row number
+        NSIndexPath *path = [self.tableView indexPathForSelectedRow];
+        int rowNum = path.row;
+        //Grab the correct item from the array
+        NSManagedObject *countdown = [countdowns objectAtIndex:rowNum];
+        
+        //Reference the view about to appear
+        eventDetailViewController *evd = [segue destinationViewController];
+        
+        //Get the modulous for the color
+        int r = fmod((double)rowNum, 4.0);
+        
+        //Assign all the view params
+        evd.myDate = [NSString stringWithFormat:@"%@", [countdown valueForKey:@"deadline"]];
+        evd.myTitle = [NSString stringWithFormat:@"%@", [countdown valueForKey:@"title"]];
+        UIImage *mainImage = [[UIImage alloc] initWithData:[countdown valueForKey:@"photo"]];
+        evd.fontColor = [colors objectAtIndex:r];
+        evd.myImage = mainImage;
+
+    }
+    
 }
 
- */
+
 -(void)loadTableData{
     // Fetch the countdowns from persistent data store
     NSManagedObjectContext *managedObjectContext = [self managedObjectContext];
