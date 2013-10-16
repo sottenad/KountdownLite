@@ -8,13 +8,14 @@
 
 #import "eventDetailViewController.h"
 
+
 @interface eventDetailViewController ()
 
 @end
 
 @implementation eventDetailViewController
 
-@synthesize myDate, myImage, myTitle, fontColor, countdownTitle, countdownDate, mainImageView;
+@synthesize mainView, myDate, myImage, myTitle, fontColor, countdownTitle, countdownDate, mainImageView, isScreenshot;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -39,12 +40,7 @@
     [df setTimeZone:[NSTimeZone systemTimeZone]];    
 
     countdownNSDate = [df dateFromString:myDate];
-
-
-
-
     
-     
     countdownTitle.text = myTitle;
     mainImageView.image = myImage;
     
@@ -53,9 +49,94 @@
     
     [self updateTimer];
     
-    NSTimer* myTimer = [NSTimer scheduledTimerWithTimeInterval: 1.0 target: self
+    if(!isScreenshot){
+        NSTimer* myTimer = [NSTimer scheduledTimerWithTimeInterval: 1.0 target: self
                                                       selector: @selector(updateTimer) userInfo: nil repeats: YES];
+    }
+
     
+}
+
+-(void) viewDidAppear:(BOOL)animated{
+    
+    if(isScreenshot){
+        CGPoint np = self.view.center;
+        int xCoord = np.x - 306;
+        int yCoord = np.y - 306;
+        
+        //If Portrait
+        CGRect grabRect = CGRectMake(xCoord,yCoord,612,612);
+        
+        UIInterfaceOrientation orientation = [UIApplication sharedApplication].statusBarOrientation;
+        if (UIInterfaceOrientationIsLandscape(orientation))
+        {
+            NSLog(@"landscape");
+            grabRect = CGRectMake(yCoord,xCoord,612,612);
+        }
+        
+
+        
+        
+        //for retina displays
+        if ([[UIScreen mainScreen] respondsToSelector:@selector(scale)]) {
+            UIGraphicsBeginImageContextWithOptions(grabRect.size, NO, [UIScreen mainScreen].scale);
+        } else {
+            UIGraphicsBeginImageContext(grabRect.size);
+        }
+        CGContextRef ctx = UIGraphicsGetCurrentContext();
+        CGContextTranslateCTM(ctx, -grabRect.origin.x, -grabRect.origin.y);
+        [self.view.layer renderInContext:ctx];
+        UIImage *viewImage = UIGraphicsGetImageFromCurrentImageContext();
+        UIGraphicsEndImageContext();
+        //UIImageWriteToSavedPhotosAlbum(viewImage, nil, nil, nil);
+        [self saveImage:viewImage];
+        
+        
+        
+        NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,
+                                                             NSUserDomainMask, YES);
+        NSString *documentsDirectory = [paths objectAtIndex:0];
+        NSString* path = [documentsDirectory stringByAppendingPathComponent:
+                          @"test.igo" ];
+
+
+        // URL TO THE IMAGE FOR THE DOCUMENT INTERACTION
+        NSURL *igImageHookFile = [NSURL fileURLWithPath:[[NSString alloc] initWithFormat:@"file://%@", path]];
+        dic.UTI = @"com.instagram.exclusivegram";
+        [self setupDocumentControllerWithURL:igImageHookFile];
+        
+        // OPEN THE HOOK
+        [dic presentOpenInMenuFromRect:self.view.frame inView:self.view animated:YES];
+        [self dismissViewControllerAnimated:YES completion:nil];
+    }
+    
+}
+
+- (void)setupDocumentControllerWithURL:(NSURL *)url
+{
+    if (dic == nil)
+    {
+        dic = [UIDocumentInteractionController interactionControllerWithURL:url];
+        dic.delegate = self;
+    }
+    else
+    {
+        dic.URL = url;
+    }
+}
+
+- (void)saveImage: (UIImage*)image
+{
+    if (image != nil)
+    {
+        NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,
+                                                             NSUserDomainMask, YES);
+        NSString *documentsDirectory = [paths objectAtIndex:0];
+        NSString* path = [documentsDirectory stringByAppendingPathComponent:
+                          @"test.igo" ];
+        NSData* data = UIImagePNGRepresentation(image);
+        [data writeToFile:path atomically:YES];
+    }
     
 }
 
@@ -81,10 +162,39 @@
 
 }
 
--(void) closeDetailView{
+-(void)takeScreenshot:(id)sender{
+
+   
     
-    [self.presentingViewController dismissViewControllerAnimated:YES completion:nil];
+   // [self performSegueWithIdentifier:@"showScreenShot" sender:nil];
+
 }
+
+
+#pragma mark - Navigation
+
+// In a story board-based application, you will often want to do a little preparation before navigation
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([[segue identifier] isEqualToString:@"toScreenshot"]) {
+        eventDetailViewController *evd = [segue destinationViewController];
+        //Assign all the view params
+        evd.myDate = myDate;
+        evd.myTitle = myTitle;
+        UIImage *mainImage = myImage;
+        evd.fontColor = fontColor;
+        evd.myImage = mainImage;
+        evd.isScreenshot = YES;
+    }
+}
+
+
+-(void) transformForScreenshot:(id)sender{
+    
+    mainView.frame = CGRectMake(0, 125, 612, 612);
+    
+}
+
 
 - (void)didReceiveMemoryWarning
 {
@@ -109,5 +219,7 @@
     
     return combDate;
 }
+
+
 
 @end

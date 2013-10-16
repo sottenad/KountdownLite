@@ -8,27 +8,29 @@
 
 #import <UIKit/UIKit.h>
 
-@interface eventDetailViewController : UIViewController{
+@interface eventDetailViewController : UIViewController<UIDocumentInteractionControllerDelegate>{
     NSDate *countdownNSDate;
-    
+    UIDocumentInteractionController *dic;
 }
 
 @property UIImage *myImage;
 @property NSString *myTitle;
 @property NSString *myDate;
+@property BOOL isScreenshot;
 
 @property UIColor *fontColor;
 
-
+@property IBOutlet UIView *mainView;
 @property IBOutlet UIImageView *mainImageView;
 @property IBOutlet UILabel *countdownTitle;
 @property IBOutlet UILabel *countdownDate;
-@property IBOutlet UIButton *closeButton;
+@property IBOutlet UIImageView *backgroundRow;
 @property IBOutlet UIButton *screenShotButton;
 
 
 -(void) updateTimer;
 - (NSDate *)combineDate:(NSDate *)date withTime:(NSDate *)time;
--(IBAction)closeDetailView;
+-(IBAction)transformForScreenshot:(id)sender;
+
 
 @end

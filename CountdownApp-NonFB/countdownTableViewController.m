@@ -178,7 +178,7 @@
 
 - (void)tableView: (UITableView *)tableView didSelectRowAtIndexPath: (NSIndexPath *)indexPath
 {
-    [self performSegueWithIdentifier:@"toDetail" sender:nil];
+    //[self performSegueWithIdentifier:@"toDetail" sender:nil];
 }
 
 /*

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AA33D5E0180E4FE00060B572 /* black-90.png in Resources */ = {isa = PBXBuildFile; fileRef = AA33D5DF180E4FE00060B572 /* black-90.png */; };
 		AA53F37117FBBDA80055CC7A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA53F37017FBBDA80055CC7A /* Foundation.framework */; };
 		AA53F37317FBBDA80055CC7A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA53F37217FBBDA80055CC7A /* CoreGraphics.framework */; };
 		AA53F37517FBBDA80055CC7A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA53F37417FBBDA80055CC7A /* UIKit.framework */; };
@@ -70,6 +71,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AA33D5DF180E4FE00060B572 /* black-90.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "black-90.png"; path = "images/black-90.png"; sourceTree = "<group>"; };
 		AA53F36D17FBBDA80055CC7A /* KountdownLite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KountdownLite.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA53F37017FBBDA80055CC7A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		AA53F37217FBBDA80055CC7A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -251,6 +253,7 @@
 		AA53F3C417FBCD780055CC7A /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				AA33D5DF180E4FE00060B572 /* black-90.png */,
 				AAC981CA1804A91900A0352E /* 29.png */,
 				AAC981CB1804A91900A0352E /* 40.png */,
 				AAC981CC1804A91900A0352E /* 58.png */,
@@ -395,6 +398,7 @@
 				AA53F3C917FBCD910055CC7A /* divider.png in Resources */,
 				AAC981D11804A91900A0352E /* 40.png in Resources */,
 				AA6CB21017FFCE0D0035EB9C /* landscape_nonretina_1024x768.png in Resources */,
+				AA33D5E0180E4FE00060B572 /* black-90.png in Resources */,
 				AA53F3DE17FE47780055CC7A /* white-92.png in Resources */,
 				AA53F3DD17FE47780055CC7A /* white-92@2x.png in Resources */,
 				AA6CB21217FFCE0D0035EB9C /* portrait_nonretina_768x1024.png in Resources */,
@@ -561,7 +565,7 @@
 				GCC_PREFIX_HEADER = "CountdownApp-NonFB/KountdownLite-Prefix.pch";
 				INFOPLIST_FILE = "CountdownApp-NonFB/KountdownLite-Info.plist";
 				PRODUCT_NAME = KountdownLite;
-				PROVISIONING_PROFILE = "E8CC8533-0597-4EBD-824E-5998458F8918";
+				PROVISIONING_PROFILE = "A0B6CE6C-C84E-491B-9FCA-452E9ED0C523";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -577,7 +581,7 @@
 				GCC_PREFIX_HEADER = "CountdownApp-NonFB/KountdownLite-Prefix.pch";
 				INFOPLIST_FILE = "CountdownApp-NonFB/KountdownLite-Info.plist";
 				PRODUCT_NAME = KountdownLite;
-				PROVISIONING_PROFILE = "E8CC8533-0597-4EBD-824E-5998458F8918";
+				PROVISIONING_PROFILE = "A0B6CE6C-C84E-491B-9FCA-452E9ED0C523";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

@@ -155,19 +155,56 @@
             </objects>
             <point key="canvasLocation" x="700" y="-621"/>
         </scene>
-        <!--View Controller-->
+        <!--Event Detail View Controller-->
         <scene sceneID="NLq-P5-Bgb">
             <objects>
-                <viewController id="sD9-Xg-uav" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="screenshotView" modalPresentationStyle="currentContext" useStoryboardIdentifierAsRestorationIdentifier="YES" id="sD9-Xg-uav" customClass="eventDetailViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Pbs-z9-Vdo">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="black-90.png" id="8P9-t7-bLm">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="Qbc-V2-BaT">
+                                <rect key="frame" x="206" y="78" width="612" height="612"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="white-92.png" id="xS8-Aw-FW2">
+                                <rect key="frame" x="206" y="329" width="612" height="101"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="udH-XC-Gxf">
+                                <rect key="frame" x="226" y="329" width="572" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="26"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="2vq-o7-qi2">
+                                <rect key="frame" x="226" y="376" width="572" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="25"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <value key="contentSizeForViewInPopover" type="size" width="612" height="612"/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="backgroundRow" destination="xS8-Aw-FW2" id="Klz-zp-7oJ"/>
+                        <outlet property="countdownDate" destination="2vq-o7-qi2" id="ELA-nn-Afd"/>
+                        <outlet property="countdownTitle" destination="udH-XC-Gxf" id="lNJ-ks-Yg6"/>
+                        <outlet property="mainImageView" destination="Qbc-V2-BaT" id="She-u3-G3d"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JTB-Ul-VuA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1845" y="-85"/>
+            <point key="canvasLocation" x="1904" y="49"/>
         </scene>
         <!--Event Detail View Controller-->
         <scene sceneID="Mc1-gw-Sz6">
@@ -178,7 +215,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="wP1-hn-YVJ">
-                                <rect key="frame" x="-5" y="0.0" width="773" height="1024"/>
+                                <rect key="frame" x="-2" y="0.0" width="773" height="1024"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="white-92.png" id="8xw-ep-CPO">
@@ -186,23 +223,26 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fDl-0T-w0a">
-                                <rect key="frame" x="29" y="342" width="337" height="86"/>
+                                <rect key="frame" x="20" y="341" width="337" height="86"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="21"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Wmp-WL-HmX">
                                 <rect key="frame" x="286" y="342" width="462" height="86"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="22"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="23"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Yfc-jo-TU6">
-                                <rect key="frame" x="324" y="204" width="120" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <rect key="frame" x="628" y="974" width="120" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
                                 <state key="normal" title="Take Screen Shot">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="sD9-Xg-uav" kind="modal" identifier="toScreenshot" modalTransitionStyle="crossDissolve" id="0YA-KY-e81"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -210,10 +250,11 @@
                     <navigationItem key="navigationItem" id="fdf-8U-rSf"/>
                     <nil key="simulatedTopBarMetrics"/>
                     <connections>
+                        <outlet property="backgroundRow" destination="8xw-ep-CPO" id="yaT-8K-1Vj"/>
                         <outlet property="countdownDate" destination="Wmp-WL-HmX" id="SiZ-8c-IF8"/>
                         <outlet property="countdownTitle" destination="fDl-0T-w0a" id="7kT-1M-Mnu"/>
                         <outlet property="mainImageView" destination="wP1-hn-YVJ" id="pu1-ZR-iCm"/>
-                        <outlet property="screenShotButton" destination="Yfc-jo-TU6" id="lF5-Av-yx1"/>
+                        <outlet property="mainView" destination="Z7B-a9-Z14" id="ddl-PN-7Mc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jgw-Hu-5HB" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -222,6 +263,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="black-90.png" width="20" height="20"/>
         <image name="modalbackground.png" width="270" height="365"/>
         <image name="upload.png" width="241" height="40"/>
         <image name="white-92.png" width="1024" height="86"/>
